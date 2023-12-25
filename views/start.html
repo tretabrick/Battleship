@@ -1,0 +1,11 @@
+{% extends "./layouts/main1.html" %}
+
+{% block content %}
+<div id="enter-game">
+    <form action="POST">
+        <input type="text" value="enter your friend's game code">
+        <button type="submit">Start game</button>
+    </form>
+</div>
+<p>Your code will be {{ gamecode }}</p>
+{% endblock %}
